@@ -1,0 +1,132 @@
+Name: Purva Ghom
+Roll no: TIB16
+
+Microsoft Windows [Version 10.0.22621.1702]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Student>docker -v
+Docker version 27.4.0, build bde2b89
+
+C:\Users\Student>docker info
+Client:
+ Version:    27.4.0
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Ask Gordon - Docker Agent (Docker Inc.)
+    Version:  v0.5.1
+    Path:     C:\Program Files\Docker\cli-plugins\docker-ai.exe
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.19.2-desktop.1
+    Path:     C:\Program Files\Docker\cli-plugins\docker-buildx.exe
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.31.0-desktop.2
+    Path:     C:\Program Files\Docker\cli-plugins\docker-compose.exe
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.37
+    Path:     C:\Program Files\Docker\cli-plugins\docker-debug.exe
+  desktop: Docker Desktop commands (Beta) (Docker Inc.)
+    Version:  v0.1.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-desktop.exe
+  dev: Docker Dev Environments (Docker Inc.)
+    Version:  v0.1.2
+    Path:     C:\Program Files\Docker\cli-plugins\docker-dev.exe
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.27
+    Path:     C:\Program Files\Docker\cli-plugins\docker-extension.exe
+  feedback: Provide feedback, right in your terminal! (Docker Inc.)
+    Version:  v1.0.5
+    Path:     C:\Program Files\Docker\cli-plugins\docker-feedback.exe
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-init.exe
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-sbom.exe
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.15.1
+    Path:     C:\Program Files\Docker\cli-plugins\docker-scout.exe
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 27.4.0
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: runc io.containerd.runc.v2 nvidia
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 472731909fa34bd7bc9c087e4c27943f9835f111
+ runc version: v1.1.13-0-g58aa920
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: unconfined
+ Kernel Version: 5.15.167.4-microsoft-standard-WSL2
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 12
+ Total Memory: 7.609GiB
+ Name: docker-desktop
+ ID: 750235a5-a14b-4c82-a5e3-1d79dd65046e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+
+C:\Users\Student>docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+C:\Users\Student>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\Student>docker run --name JAVA -it -d openjdk
+Unable to find image 'openjdk:latest' locally
+latest: Pulling from library/openjdk
+197c1adcd755: Pull complete
+57b698b7af4b: Pull complete
+95a27dbe0150: Pull complete
+Digest: sha256:9b448de897d211c9e0ec635a485650aed6e28d4eca1efbc34940560a480b3f1f
+Status: Downloaded newer image for openjdk:latest
+b5c32a2f3d4927331bfabe4950d063b9a8f8220cd4a026e34f3fec9aa68a4b80
+
+C:\Users\Student>docker exec -it JAVA jshell
+|  Welcome to JShell -- Version 18.0.2.1
+|  For an introduction type: /help intro
+
+jshell> System.out.println("TIB16");
+TIB16
+
+jshell> int a=16; int b=9; int c=a+b; System.out.println(c);
+a ==> 16
+b ==> 9
+c ==> 25
+25

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Home & Furniture</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Sports</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="https://cdn.create.vista.com/api/media/small/458411510/stock-vector-letter-linked-logo-business-company-identity-initial-letter-logo-vector"  height="70px" width="70px" alt="logo">
+            <h1>Welcome to Our Shopping Website!</h1>
+            <p>Explore the best products at amazing prices.</p>
+            <img src="https://img.freepik.com/premium-vector/modern-sale-banner-website-slider-template-design_54925-46.jpg" height="350px" width="100%" alt="">
+        </div>
+
+        <!-- Product Section -->
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/e/1/n/m-net-short-dress-pink-kudiyo-original-imagzv8usc5uhjyr.jpeg?q=90&crop=false" alt="Product 1">
+                <h3>Pink Dress</h3>
+                <p>Sold by vision stores.</p>
+                <div class="price">$649.00</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStMk_j17CnxCPNtRXfBtwvIWO4cIN4W1ybwQ&s" alt="Product 2">
+                <h3>Red Party Dress</h3>
+                <p>Sold by Laxmi Retails.</p>
+                <div class="price">$1999.87</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPrkh0iniB1MO0uJQFFpbd0IXglAfNe8qk_w&s" alt="Product 3">
+                <h3>Beautiful Fairy Gown</h3>
+                <p>Amazing Dress sale for weddings.</p>
+                <div class="price">$399.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e9aa48TWN_TWENT00013335_1.jpg?tr=w-512" alt="Product 4">
+                <h3>Black Dress</h3>
+                <p>Sold by NYKAA Fashion.</p>
+                <div class="price">$149.99</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Shopping Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
